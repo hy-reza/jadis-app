@@ -14,7 +14,8 @@ class DataController extends Controller
      */
     public function index()
     {
-        //
+        $data = Data::all()->toArray();
+        return view('v1.index', compact('data'));
     }
 
     /**
@@ -67,7 +68,8 @@ class DataController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Data::find($id);
+        return view('v1.edit', compact('data','id'));
     }
 
     /**
@@ -79,7 +81,22 @@ class DataController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Data::find($id);
+        $this->validate(request(), [
+            'nim' => 'required',
+            'nama' => 'required',
+            'jurusan' => 'required',
+            'fakultas' => 'required',
+            'alamat' => 'required',
+        ]);
+
+        $data->nim = $request->get('nim');
+        $data->nama = $request->get('nama');
+        $data->jurusan = $request->get('jurusan');
+        $data->fakultas = $request->get('fakultas');
+        $data->alamat = $request->get('alamat');
+        $data->save();
+        return redirect('v1')->with('success','Data Changed');
     }
 
     /**

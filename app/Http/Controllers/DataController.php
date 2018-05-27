@@ -107,6 +107,8 @@ class DataController extends Controller
      */
     public function destroy($id)
     {
-        //
+         $data = data::find($id);         
+         $data->delete();         
+         return redirect('v1')->with('success','Product has been  deleted'); 
     }
 }

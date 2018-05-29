@@ -107,7 +107,7 @@
                         </li>
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('kelas.index')}}">Data Mahasiswa</a></li>
                             </ul>
                         </li>
                    </ul>
@@ -133,63 +133,47 @@
                   <h1 class="text"><br><br><br><br><br>Anda login sebagai Administrator</h1>
                 </p>
             </div> -->
-						<body>
-							<div class="container">
-								<h2>Input Data Mahasiswa</h2>
-								@if ($errors->any())
-								<div class="alert alert-danger">
-									<ul>
-										@foreach ($errors->all() as $error)
-										<li>{{ $error }}</li>
-										@endforeach
-									</ul>
-								</div><br />
-								@endif
+					 <div class="container">
+								<br />
 								@if (\Session::has('success'))
 								<div class="alert alert-success">
 									<p>{{ \Session::get('success') }}</p>
 								</div><br />
 								@endif
-								<form method="post" action="{{url('v1')}}">
-								@csrf
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="nim" placeholder="nim">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="nama" placeholder="nama">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="jurusan" placeholder="jurusan">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="fakultas" placeholder="fakultas">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<textarea class="form-control" name="alamat" placeholder="alamat"></textarea>
-									</div>
-								</div>
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>NIM</th>
+											<th>NAMA</th>
+											<th>JURUSAN</th>
+											<th>FAKULTAS</th>
+											<th>ALAMAT</th>
+											<th colspan="2">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										@foreach($data as $data)
+										<tr>
+											<td>{{$data['id']}}</td>
+											<td>{{$data['nim']}}</td>
+											<td>{{$data['nama']}}</td>
+											<td>{{$data['jurusan']}}</td>
+											<td>{{$data['fakultas']}}</td>
+											<td>{{$data['alamat']}}</td>
+											<td><a href="{{action('DataController@edit', $data['id'])}}" class="btn btn-warning">Ubah</a></td>
+											<td>
+												<form action="{{action('DataController@destroy', $data['id'])}}" method="post">
+													@csrf
+													<input type="hidden" name="_method" value="DELETE">
+													<button class="btn btn-danger" type="submit">Hapus</button>
+												</form>
+											</td>
+										</tr>
+										@endforeach
+									</tbody>
+								</table>
 							</div>
-							<div class="row">
-								<div class="col-md-4"></div>
-								<div class="form-group col-md-4">
-									<button type="submit" class="btn btn-success" style="margin-left: 38px">Tambah</button>
-								</div>
-							</div>
-						</form>
 
             <!-- End Bread crumb -->
     <!-- All Jquery -->

@@ -107,7 +107,7 @@
                         </li>
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('kelas.index')}}">Data Mahasiswa</a></li>
                             </ul>
                         </li>
                    </ul>
@@ -150,7 +150,7 @@
 									<p>{{ \Session::get('success') }}</p>
 								</div><br />
 								@endif
-								<form method="post" action="{{url('v1')}}">
+								<form method="post" action="{{url('kelas')}}">
 								@csrf
 								<div class="row">
 									<div class="col-md-4"></div>

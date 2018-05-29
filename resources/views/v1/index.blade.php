@@ -100,9 +100,9 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="{{ route('register') }}">Register Mahasiswa </a></li>
                                 <li><a href="{{ route('v1.create') }}">Tambah Data Mahasiswa </a></li>
-                                <li><a href="index.html">Tambah Data Mata Kuliah </a></li>
-                                <li><a href="index.html">Tambah Data Kelas Mahasiswa </a></li>
-                                <li><a href="index.html">Tambah Data Jurusan </a></li>
+                                <li><a href="{{ route('matkul.create') }}">Tambah Data Mata Kuliah </a></li>
+                                <li><a href="{{ route('kelas.create') }}">Tambah Data Kelas Mahasiswa </a></li>
+                                <li><a href="{{ route('jurusan.create') }}">Tambah Data Jurusan </a></li>
                             </ul>
                         </li>
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>

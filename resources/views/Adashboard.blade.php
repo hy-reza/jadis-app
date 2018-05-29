@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/Adminhome/images/favicon.png')}}">
-    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <title>Admin KRS</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('assets/Adminhome/css/lib/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom CSS -->
@@ -96,61 +96,16 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right">2</span></span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ecommerce </a></li>
-                                <li><a href="index1.html">Analytics </a></li>
+                                <li><a href="{{ route('register') }}">Register Mahasiswa </a></li>
+                                <li><a href="index.html">Tambah Data Mahasiswa </a></li>
+                                <li><a href="index.html">Tambah Data Mata Kuliah </a></li>
+                                <li><a href="index.html">Tambah Data Kelas Mahasiswa </a></li>
+                                <li><a href="index.html">Tambah Data Jurusan </a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Charts</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="chart-flot.html">Flot</a></li>
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chart-chartjs.html">ChartJs</a></li>
-                                <li><a href="chart-chartist.html">Chartist </a></li>
-                                <li><a href="chart-amchart.html">AmChart</a></li>
-                                <li><a href="chart-echart.html">EChart</a></li>
-                                <li><a href="chart-sparkline.html">Sparkline</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-label">Features</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Bootstrap UI <span class="label label-rouded label-warning pull-right">6</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="ui-alert.html">Alert</a></li>
-                                <li><a href="ui-button.html">Button</a></li>
-                                <li><a href="ui-dropdown.html">Dropdown</a></li>
-                                <li><a href="ui-progressbar.html">Progressbar</a></li>
-                                <li><a href="ui-tab.html">Tab</a></li>
-                                <li><a href="ui-typography.html">Typography</a></li>
-                            </ul>
-                        </li>
-						<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Components <span class="label label-rouded label-danger pull-right">6</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="uc-calender.html">Calender</a></li>
-                                <li><a href="uc-datamap.html">Datamap</a></li>
-                                <li><a href="uc-nestedable.html">Nestedable</a></li>
-                                <li><a href="uc-sweetalert.html">Sweetalert</a></li>
-                                <li><a href="uc-toastr.html">Toastr</a></li>
-                                <li><a href="uc-weather.html">Weather</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-wpforms"></i><span class="hide-menu">Forms</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="form-basic.html">Basic Forms</a></li>
-                                <li><a href="form-layout.html">Form Layout</a></li>
-                                <li><a href="form-validation.html">Form Validation</a></li>
-                                <li><a href="form-editor.html">Editor</a></li>
-                                <li><a href="form-dropzone.html">Dropzone</a></li>
-                            </ul>
-                        </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="table-bootstrap.html">Basic Tables</a></li>
-                                <li><a href="table-datatable.html">Data Tables</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                   </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -162,7 +117,7 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">Welcome</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
@@ -170,12 +125,17 @@
                     </ol>
                 </div>
             </div>
+            <div class="col" align="center">
+                <p>
+                  <h1 class="text"><br><br><br><br><br>Anda login sebagai Administrator</h1>
+                </p>
+            </div>
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
-            <div class="container-fluid">
+            <!-- <div class="container-fluid"> -->
                 <!-- Start Page Content -->
-                <div class="row">
-                    <div class="col-md-3">
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-md-3">
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
@@ -187,8 +147,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div> -->
+                    <!-- <div class="col-md-3">
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
@@ -200,8 +160,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div> -->
+                    <!-- <div class="col-md-3">
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
@@ -213,8 +173,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                    </div> -->
+                    <!-- <div class="col-md-3">
                         <div class="card p-30">
                             <div class="media">
                                 <div class="media-left meida media-middle">
@@ -226,24 +186,26 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+              </div>
+            </div>
 
-                <div class="row bg-white m-l-0 m-r-0 box-shadow ">
+                <!-- <div class="row bg-white m-l-0 m-r-0 box-shadow "> -->
 
                     <!-- column -->
-                    <div class="col-lg-8">
+                    <!-- <div class="col-lg-8">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Extra Area Chart</h4>
                                 <div id="extra-area-chart"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- column -->
 
                     <!-- column -->
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body browser">
                                 <p class="f-w-600">iMacs <span class="pull-right">85%</span></p>
@@ -272,14 +234,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- column -->
-                </div>
-                <div class="row">
-					<div class="col-lg-3">
-                        <div class="card bg-dark">
-                            <div class="testimonial-widget-one p-17">
-                                <div class="testimonial-widget-one owl-carousel owl-theme">
+                <!-- </div> -->
+                <!-- <div class="row">
+					<div class="col-lg-3"> -->
+                        <!-- <div class="card bg-dark">
+                            <div class="testimonial-widget-one p-17"> -->
+                                <!-- <div class="testimonial-widget-one owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="testimonial-content">
                                             <img class="testimonial-author-img" src="images/avatar/2.jpg" alt="" />
@@ -352,11 +314,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
+                                </div> -->
+                            <!-- </div>
+                        </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-9">
                         <div class="card">
                             <div class="card-title">
                                 <h4>Recent Orders </h4>
@@ -364,74 +326,18 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Name</th>
-                                                <th>Product</th>
-                                                <th>quantity</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>iBook</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/2.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>iPhone</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/3.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>iMac</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-warning">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>iBook</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                        </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             <!-- footer -->
-            <footer class="footer"> © 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
+            <!-- <footer class="footer"> © 2018 All rights reserved. Template designed by <a>Adam Risvi Naufal</a></footer> -->
             <!-- End footer -->
-        </div>
+        <!-- </div> -->
         <!-- End Page wrapper  -->
-    </div>
+    <!-- </div> -->
     <!-- End Wrapper -->
     <!-- All Jquery -->
     <script src="{{asset('assets/Adminhome/js/lib/jquery/jquery.min.js')}}"></script>

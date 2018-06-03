@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Data;
+use App\Jurusan;
 
 class JurusanController extends Controller
 {
@@ -14,7 +14,7 @@ class JurusanController extends Controller
      */
     public function index()
     {
-        $data = Data::all()->toArray();
+        $jurusans = Jurusan::all()->toArray();
         return view('jurusan.index', compact('jurusan'));
     }
 
@@ -36,15 +36,13 @@ class JurusanController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $this -> validate(request(),[
-            'nim' => 'required',
+        $jurusans = $this -> validate(request(),[
+            'kode' => 'required',
             'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
+            'jadwal' => 'required',
         ]);
 
-        Data::create($data);
+        Jurusan::create($jurusans);
 
         return back()-> with('success','Data stored');;
     }
@@ -68,7 +66,7 @@ class JurusanController extends Controller
      */
     public function edit($id)
     {
-        $data = Data::find($id);
+        $jurusans = Jurusan::find($id);
         return view('jurusan.edit', compact('data','id'));
     }
 
@@ -81,21 +79,17 @@ class JurusanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Data::find($id);
+        $jurusans = Jurusan::find($id);
         $this->validate(request(), [
-            'nim' => 'required',
+            'kode' => 'required',
             'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
+            'jadwal' => 'required',
         ]);
 
-        $data->nim = $request->get('nim');
-        $data->nama = $request->get('nama');
-        $data->jurusan = $request->get('jurusan');
-        $data->fakultas = $request->get('fakultas');
-        $data->alamat = $request->get('alamat');
-        $data->save();
+        $jurusans->kode = $request->get('kode');
+        $jurusans->nama = $request->get('nama');
+        $jurusans->jadwal = $request->get('jadwal');
+        $jurusans->save();
         return redirect('jurusan')->with('success','Data Changed');
     }
 
@@ -107,8 +101,8 @@ class JurusanController extends Controller
      */
     public function destroy($id)
     {
-        $data = data::find($id);         
-         $data->delete();         
+         $jurusans = Jurusan::find($id);
+         $jurusans->delete();
          return redirect('jurusan')->with('success','Product has been  deleted');
     }
 }

@@ -17,42 +17,28 @@
 			</ul>
 		</div><br />
 		@endif
-		<form method="post" action="{{action('DataController@update', $id)}}">
+		<form method="post" action="{{action('JurusanController@update', $id)}}">
 			@csrf
 			<input name="_method" type="hidden" value="PATCH">
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="form-group col-md-4">
 					<label for="name">Nim :</label>
-					<input type="text" class="form-control" name="nim" value="{{$data->nim}}">
+					<input type="text" class="form-control" name="kode" value="{{$jurusans->kode}}">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="form-group col-md-4">
 					<label for="name">Nama :</label>
-					<input type="text" class="form-control" name="nama" value="{{$data->nama}}">
+					<input type="text" class="form-control" name="nama" value="{{$jurusans->nama}}">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="form-group col-md-4">
-					<label for="name">Jurusan :</label>
-					<input type="text" class="form-control" name="jurusan" value="{{$data->jurusan}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Fakultas :</label>
-					<input type="text" class="form-control" name="fakultas" value="{{$data->fakultas}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Alamat :</label>
-					<input type="text" class="form-control" name="alamat" value="{{$data->alamat}}">
+					<label for="name">Jadwal :</label>
+					<input type="text" class="form-control" name="jadwal" value="{{$jurusans->jadwal}}">
 				</div>
 			</div>
 		</div>

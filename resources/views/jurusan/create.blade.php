@@ -108,6 +108,9 @@
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('matkul.index')}}">Data Mata Kuliah</a></li>
+                                <li><a href="{{route ('jurusan.index')}}">Data Jadwal Jurusan</a></li>
+                                <li><a href="{{route ('kelas.index')}}">Data Kelas Mahasiswa</a></li>
                             </ul>
                         </li>
                    </ul>
@@ -150,36 +153,24 @@
 									<p>{{ \Session::get('success') }}</p>
 								</div><br />
 								@endif
-								<form method="post" action="{{url('v1')}}">
+								<form method="post" action="{{url('jurusan')}}">
 								@csrf
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="nim" placeholder="nim">
+										<input type="text" class="form-control" name="kode" placeholder="Kode">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="nama" placeholder="nama">
+										<input type="text" class="form-control" name="nama" placeholder="Nama">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="jurusan" placeholder="jurusan">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="fakultas" placeholder="fakultas">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4"></div>
-									<div class="form-group col-md-4">
-										<textarea class="form-control" name="alamat" placeholder="alamat"></textarea>
+										<input type="text" class="form-control" name="jadwal" placeholder="Jadwal">
 									</div>
 								</div>
 							</div>

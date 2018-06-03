@@ -23,36 +23,8 @@
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="form-group col-md-4">
-					<label for="name">Nim :</label>
-					<input type="text" class="form-control" name="nim" value="{{$data->nim}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Nama :</label>
-					<input type="text" class="form-control" name="nama" value="{{$data->nama}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Jurusan :</label>
-					<input type="text" class="form-control" name="jurusan" value="{{$data->jurusan}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Fakultas :</label>
-					<input type="text" class="form-control" name="fakultas" value="{{$data->fakultas}}">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="form-group col-md-4">
-					<label for="name">Alamat :</label>
-					<input type="text" class="form-control" name="alamat" value="{{$data->alamat}}">
+					<label for="name">Kelas :</label>
+					<input type="text" class="form-control" name="nim" value="{{$kelas->kelas}}">
 				</div>
 			</div>
 		</div>

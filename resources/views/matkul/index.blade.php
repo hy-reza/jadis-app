@@ -107,7 +107,10 @@
                         </li>
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="{{route ('matkul.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('matkul.index')}}">Data Mata Kuliah</a></li>
+                                <li><a href="{{route ('jurusan.index')}}">Data Jadwal Jurusan</a></li>
+                                <li><a href="{{route ('kelas.index')}}">Data Kelas Mahasiswa</a></li>
                             </ul>
                         </li>
                    </ul>
@@ -144,26 +147,20 @@
 									<thead>
 										<tr>
 											<th>ID</th>
-											<th>NIM</th>
-											<th>NAMA</th>
-											<th>JURUSAN</th>
-											<th>FAKULTAS</th>
-											<th>ALAMAT</th>
+											<th>Kode</th>
+											<th>Nama</th>
 											<th colspan="2">Action</th>
 										</tr>
 									</thead>
 									<tbody>
-										@foreach($data as $data)
+										@foreach($matkuls as $matkuls)
 										<tr>
-											<td>{{$data['id']}}</td>
-											<td>{{$data['nim']}}</td>
-											<td>{{$data['nama']}}</td>
-											<td>{{$data['jurusan']}}</td>
-											<td>{{$data['fakultas']}}</td>
-											<td>{{$data['alamat']}}</td>
-											<td><a href="{{action('DataController@edit', $data['id'])}}" class="btn btn-warning">Ubah</a></td>
+											<td>{{$matkuls['id']}}</td>
+											<td>{{$matkuls['kode']}}</td>
+											<td>{{$matkuls['nama']}}</td>
+											<td><a href="{{action('MatkulController@edit', $matkuls['id'])}}" class="btn btn-warning">Ubah</a></td>
 											<td>
-												<form action="{{action('MatkulController@destroy', $data['id'])}}" method="post">
+												<form action="{{action('MatkulController@destroy', $matkuls['id'])}}" method="post">
 													@csrf
 													<input type="hidden" name="_method" value="DELETE">
 													<button class="btn btn-danger" type="submit">Hapus</button>

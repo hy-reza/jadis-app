@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Data;
+use App\Kelas;
 
 class KelasController extends Controller
 {
@@ -14,7 +14,7 @@ class KelasController extends Controller
      */
     public function index()
     {
-        $data = Data::all()->toArray();
+        $kelas = Kelas::all()->toArray();
         return view('kelas.index', compact('kelas'));
     }
 
@@ -36,15 +36,11 @@ class KelasController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $this -> validate(request(),[
-            'nim' => 'required',
-            'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
+        $kelas = $this -> validate(request(),[
+            'kelas' => 'required',
         ]);
 
-        Data::create($data);
+        Kelas::create($kelas);
 
         return back()-> with('success','Data stored');;
     }
@@ -68,7 +64,7 @@ class KelasController extends Controller
      */
     public function edit($id)
     {
-        $data = Data::find($id);
+        $kelas = Kelas::find($id);
         return view('kelas.edit', compact('data','id'));
     }
 
@@ -81,21 +77,13 @@ class KelasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Data::find($id);
+        $kelas = Kelas::find($id);
         $this->validate(request(), [
-            'nim' => 'required',
-            'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
+            'kelas' => 'required',
         ]);
 
-        $data->nim = $request->get('nim');
-        $data->nama = $request->get('nama');
-        $data->jurusan = $request->get('jurusan');
-        $data->fakultas = $request->get('fakultas');
-        $data->alamat = $request->get('alamat');
-        $data->save();
+        $kelas->kelas = $request->get('kelas');
+        $kelas->save();
         return redirect('kelas')->with('success','Data Changed');
     }
 
@@ -107,8 +95,8 @@ class KelasController extends Controller
      */
     public function destroy($id)
     {
-        $data = data::find($id);         
-         $data->delete();         
-         return redirect('kelas')->with('success','Product has been  deleted'); 
+         $kelas = Kelas::find($id);
+         $kelas->delete();
+         return redirect('kelas')->with('success','Product has been  deleted');
     }
 }

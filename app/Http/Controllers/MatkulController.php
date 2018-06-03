@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Data;
+use App\Matkul;
 
 class MatkulController extends Controller
 {
@@ -14,7 +14,7 @@ class MatkulController extends Controller
      */
     public function index()
     {
-        $data = Data::all()->toArray();
+        $matkuls = Matkul::all()->toArray();
         return view('matkul.index', compact('matkuls'));
     }
 
@@ -37,14 +37,11 @@ class MatkulController extends Controller
     public function store(Request $request)
     {
         $matkuls = $this -> validate(request(),[
-            'nim' => 'required',
+            'kode' => 'required',
             'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
         ]);
 
-        Data::create($matkuls);
+        Matkul::create($matkuls);
 
         return back()-> with('success','Data stored');;    }
 
@@ -67,7 +64,7 @@ class MatkulController extends Controller
      */
     public function edit($id)
     {
-        $matkuls = Data::find($id);
+        $matkuls = Matkul::find($id);
         return view('matkul.edit', compact('matkuls','id'));
     }
 
@@ -80,21 +77,15 @@ class MatkulController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $matkuls = matkuls::find($id);
+        $matkuls = Matkul::find($id);
         $this->validate(request(), [
-            'nim' => 'required',
+            'kode' => 'required',
             'nama' => 'required',
-            'jurusan' => 'required',
-            'fakultas' => 'required',
-            'alamat' => 'required',
         ]);
 
-        $data->nim = $request->get('nim');
-        $data->nama = $request->get('nama');
-        $data->jurusan = $request->get('jurusan');
-        $data->fakultas = $request->get('fakultas');
-        $data->alamat = $request->get('alamat');
-        $data->save();
+        $matkuls->kode = $request->get('kode');
+        $matkuls->nama = $request->get('nama');
+        $matkuls->save();
         return redirect('matkul')->with('success','Data Changed');
     }
 
@@ -104,12 +95,12 @@ class MatkulController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
+
 
     public function destroy($id)
     {
-        $product = Product::find($id);         
-        $product->delete();         
+        $matkuls = Matkul::find($id);
+        $matkuls->delete();
         return redirect('matkul')->with('success','Product has been  deleted');
     }
 }

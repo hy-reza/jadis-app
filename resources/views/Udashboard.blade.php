@@ -70,7 +70,7 @@
                     <ul class="list-unstyled navbar__list">
                         <li>
                             <a href="beranda.html">
-                                <i class="fas fa-tachometer-alt"></i>BERANDA</a> 
+                                <i class="fas fa-tachometer-alt"></i>BERANDA</a>
                         </li>
                         <li>
                             <a href="jadwalkuliah.html">
@@ -139,8 +139,6 @@
                             <div class="col-md-12">
                                 <div class="overview-wrap">
                                     <h2 class="title-1">overview</h2>
-                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>add item</button>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +151,7 @@
                                                 <i class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>10368</h2>
-                                                <span>members online</span>
+                                                <h2>Biodata</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -171,8 +168,7 @@
                                                 <i class="zmdi zmdi-shopping-cart"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>388,688</h2>
-                                                <span>items solid</span>
+                                                <h2>Jadwal Kuliah</h2>
                                             </div>
                                         </div>
                                         <div class="overview-chart">

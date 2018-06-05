@@ -149,7 +149,7 @@
 											<th>ID</th>
 											<th>Kode</th>
 											<th>Nama</th>
-                      <th>Jadwal</th>
+                                            <th>Jadwal</th>
 											<th colspan="2">Action</th>
 										</tr>
 									</thead>
@@ -159,7 +159,7 @@
 											<td>{{$jurusans['id']}}</td>
 											<td>{{$jurusans['kode']}}</td>
 											<td>{{$jurusans['nama']}}</td>
-                      <td>{{$jurusans['jadwal']}}</td>
+                                            <td>{{$jurusans['jadwal']}}</td>
 											<td><a href="{{action('JurusanController@edit', $jurusans['id'])}}" class="btn btn-warning">Ubah</a></td>
 											<td>
 												<form action="{{action('JurusanController@destroy', $jurusans['id'])}}" method="post">

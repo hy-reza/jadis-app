@@ -108,6 +108,9 @@
 												<li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
+                                <li><a href="{{route ('matkul.index')}}">Data Mata Kuliah</a></li>
+                                <li><a href="{{route ('jurusan.index')}}">Data Jadwal Jurusan</a></li>
+                                <li><a href="{{route ('kelas.index')}}">Data Kelas Mahasiswa</a></li>
                             </ul>
                         </li>
                    </ul>
@@ -120,11 +123,11 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Welcome</h3> </div>
+                    <h3 class="text-primary">Mahasiswa</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Data</a></li>
+                        <li class="breadcrumb-item active">Mahasiswa</li>
                     </ol>
                 </div>
             </div>
@@ -149,7 +152,8 @@
 											<th>JURUSAN</th>
 											<th>FAKULTAS</th>
 											<th>ALAMAT</th>
-											<th colspan="2">Action</th>
+                                            <th>Edit</th>
+											<th colspan="2">Hapus</th>
 										</tr>
 									</thead>
 									<tbody>

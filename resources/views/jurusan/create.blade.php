@@ -123,11 +123,11 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Welcome</h3> </div>
+                    <h3 class="text-primary">JURUSAN</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Menu</a></li>
+                        <li class="breadcrumb-item active">Jurusan</li>
                     </ol>
                 </div>
             </div>
@@ -138,7 +138,7 @@
             </div> -->
 						<body>
 							<div class="container">
-								<h2>Input Data Mahasiswa</h2>
+								<h2>Input Data Jadwal Jurusan</h2>
 								@if ($errors->any())
 								<div class="alert alert-danger">
 									<ul>
@@ -170,7 +170,7 @@
 								<div class="row">
 									<div class="col-md-4"></div>
 									<div class="form-group col-md-4">
-										<input type="text" class="form-control" name="jadwal" placeholder="Jadwal">
+										<input type="text" class="form-control" name="jadwal" placeholder="HH:MM - HH:MM">
 									</div>
 								</div>
 							</div>

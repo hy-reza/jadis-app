@@ -123,11 +123,11 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Welcome</h3> </div>
+                    <h3 class="text-primary">KELAS</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Data</a></li>
+                        <li class="breadcrumb-item active">Kelas</li>
                     </ol>
                 </div>
             </div>
@@ -148,6 +148,7 @@
 										<tr>
 											<th>ID</th>
 											<th>Kelas</th>
+                                            <th>Edit</th>
 											<th colspan="2">Action</th>
 										</tr>
 									</thead>

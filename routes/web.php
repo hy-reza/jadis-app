@@ -17,10 +17,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//route Admin
 Route::resource('v1', 'DataController');
 Route::resource('matkul', 'MatkulController');
 Route::resource('kelas', 'KelasController');
 Route::resource('jurusan', 'JurusanController');
+
+//route User
+Route::resource('Uberanda', 'UberandaController');
+Route::resource('Ujadwal', 'UjadwalController');
+Route::resource('Ubiodata', 'UbiodataController');
+Route::resource('Ukrs', 'UkrsController');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/user/logout','Auth\LoginController@userlogout')->name('user.logout');

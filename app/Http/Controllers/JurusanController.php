@@ -44,7 +44,7 @@ class JurusanController extends Controller
 
         Jurusan::create($jurusans);
 
-        return back()-> with('success','Data stored');;
+        return back()-> with('success','Jurusan Tersimpan');;
     }
 
     /**
@@ -90,7 +90,7 @@ class JurusanController extends Controller
         $jurusans->nama = $request->get('nama');
         $jurusans->jadwal = $request->get('jadwal');
         $jurusans->save();
-        return redirect('jurusan')->with('success','Data Changed');
+        return redirect('jurusan')->with('success','Jurusan Diubah');
     }
 
     /**
@@ -103,6 +103,6 @@ class JurusanController extends Controller
     {
          $jurusans = Jurusan::find($id);
          $jurusans->delete();
-         return redirect('jurusan')->with('success','Product has been  deleted');
+         return redirect('jurusan')->with('success','Jurusan Dihapus');
     }
 }

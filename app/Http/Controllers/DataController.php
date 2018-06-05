@@ -46,7 +46,7 @@ class DataController extends Controller
 
         Data::create($data);
 
-        return back()-> with('success','Data stored');;
+        return back()-> with('success','Data Tersimpan');;
     }
 
     /**
@@ -96,7 +96,7 @@ class DataController extends Controller
         $data->fakultas = $request->get('fakultas');
         $data->alamat = $request->get('alamat');
         $data->save();
-        return redirect('v1')->with('success','Data Changed');
+        return redirect('v1')->with('success','Data Diubah');
     }
 
     /**
@@ -109,6 +109,6 @@ class DataController extends Controller
     {
          $data = data::find($id);         
          $data->delete();         
-         return redirect('v1')->with('success','Product has been  deleted'); 
+         return redirect('v1')->with('success','Data Dihapus'); 
     }
 }

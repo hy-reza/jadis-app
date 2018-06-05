@@ -42,7 +42,7 @@ class KelasController extends Controller
 
         Kelas::create($kelas);
 
-        return back()-> with('success','Data stored');;
+        return back()-> with('success','Kelas Disimpan');;
     }
 
     /**
@@ -84,7 +84,7 @@ class KelasController extends Controller
 
         $kelas->kelas = $request->get('kelas');
         $kelas->save();
-        return redirect('kelas')->with('success','Data Changed');
+        return redirect('kelas')->with('success','Kelas Diubah');
     }
 
     /**
@@ -97,6 +97,6 @@ class KelasController extends Controller
     {
          $kelas = Kelas::find($id);
          $kelas->delete();
-         return redirect('kelas')->with('success','Product has been  deleted');
+         return redirect('kelas')->with('success','Kelas dihapus');
     }
 }

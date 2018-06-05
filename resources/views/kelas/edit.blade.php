@@ -23,7 +23,7 @@
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="form-group col-md-4">
-					<label for="name">Kelas :</label>
+					<label for="name">kelas :</label>
 					<input type="text" class="form-control" name="kelas" value="{{$kelas->kelas}}">
 				</div>
 			</div>

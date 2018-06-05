@@ -43,7 +43,7 @@ class MatkulController extends Controller
 
         Matkul::create($matkuls);
 
-        return back()-> with('success','Data stored');;    }
+        return back()-> with('success','Mata Kuliah Tersimpan');;    }
 
     /**
      * Display the specified resource.
@@ -86,7 +86,7 @@ class MatkulController extends Controller
         $matkuls->kode = $request->get('kode');
         $matkuls->nama = $request->get('nama');
         $matkuls->save();
-        return redirect('matkul')->with('success','Data Changed');
+        return redirect('matkul')->with('success','Mata Kuliah Diubah');
     }
 
     /**
@@ -101,6 +101,6 @@ class MatkulController extends Controller
     {
         $matkuls = Matkul::find($id);
         $matkuls->delete();
-        return redirect('matkul')->with('success','Product has been  deleted');
+        return redirect('matkul')->with('success','Mata Kuliah dihapus');
     }
 }

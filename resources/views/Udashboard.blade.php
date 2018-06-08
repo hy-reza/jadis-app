@@ -77,7 +77,7 @@
                                 <i class="fas fa-chart-bar"></i>JADWAL KULIAH</a>
                         </li>
                         <li>
-                            <a href="biodata.html">
+                            <a href="{{route ('Ubiodata.index')}}">
                                 <i class="fas fa-table"></i>BIODATA</a>
                         </li>
                         <li>

@@ -42,7 +42,7 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/admin">
                         <!-- Logo icon -->
                         <b><img src="{{asset('assets/Adminhome/images/KRS.png')}}" alt="homepage" class="dark-logo" /></b>
                         <!--End Logo icon -->

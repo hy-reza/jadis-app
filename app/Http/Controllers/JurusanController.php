@@ -15,7 +15,7 @@ class JurusanController extends Controller
     public function index()
     {
         $jurusans = Jurusan::all()->toArray();
-        return view('jurusan.index', compact('jurusan'));
+        return view('jurusan.index', compact('jurusans'));
     }
 
     /**

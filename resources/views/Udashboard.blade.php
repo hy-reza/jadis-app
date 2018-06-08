@@ -61,7 +61,7 @@
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
+                <a href="/home">
                     <img src="{{asset('assets/Userhome/images/icon/KRS.png')}}" alt="Cool Admin" />
                 </a>
             </div>

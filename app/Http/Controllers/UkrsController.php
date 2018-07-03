@@ -27,6 +27,7 @@ class UkrsController extends Controller
     {
         return view('Ukrs.create');
     }
+    
 
     /**
      * Store a newly created resource in storage.

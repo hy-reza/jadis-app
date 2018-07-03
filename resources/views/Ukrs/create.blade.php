@@ -157,13 +157,182 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4"></div>
-                                <div class="form-group col-md-4">
-                                    <button type="submit" class="btn btn-success" style="margin-left: 38px">Tambah</button>
+                            <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <table style="width: 300px" id="datatable" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>Semester</th>
+                                            <th>Mata Kuliah</th>
+                                            <th>SKS</th>
+                                            <th width="900px">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>I</td>
+                                            <td>pengantar Teknologi Informasi</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>I</td>
+                                            <td>Kalkulus dan Geometri</td>
+                                            <td>4</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>I</td>
+                                            <td>Bahasa Inggris Teknik I</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>I</td>
+                                            <td>Al-Islam dan Kemuhammadiyahan I</td>
+                                            <td>1</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>II</td>
+                                            <td>Interaksi Manusia dan Komputer</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>II</td>
+                                            <td>Organisasi dan Arsitektur Komputer</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>II</td>
+                                            <td>Pengantar Topologi</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>II</td>
+                                            <td>Pemrograman Objek dengan Java</td>
+                                            <td>4</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>II</td>
+                                            <td>Matematika Diskrit</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>II</td>
+                                            <td>Aljabar Linear dan Matriks</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>II</td>
+                                            <td>Pendidikan Pancasila dan Kewarganegaraan</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>II</td>
+                                            <td>Bahasa Inggris Teknik II</td>
+                                            <td>2</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>II</td>
+                                            <td>Al Islam dan Kemuhammadiyahan II</td>
+                                            <td>1</td>
+                                            <td>
+                                                <a href="{{route ('Ukrs.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 </div>
                             </div>
-                        </form>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
@@ -174,6 +343,7 @@
                     </div>
                 </div>
             </div>
+                        </form>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
         </div>

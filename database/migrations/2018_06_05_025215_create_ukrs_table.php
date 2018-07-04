@@ -14,8 +14,10 @@ class CreateUkrsTable extends Migration
     public function up()
     {
         Schema::create('ukrs', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('Ubiodata');
+            $table->increments('no');
+            $table->string('semester');
+            $table->string('mata_kuliah');
+            $table->string('sks');
             $table->timestamps();
         });
     }

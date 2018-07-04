@@ -147,7 +147,7 @@
                                 <table style="width: 100px" id="datatable" class="table table-striped table-bordered">
                                         <tr>
                                             <td>
-                                                <a href="{{route ('Ukrs.create')}}" class="btn btn-primary btn-sm">Tambah KRS</a>
+                                                <a href="{{route ('Ukrs.create')}}" class="btn btn-primary btn-sm">Pilih Mata Kuliah</a>
                                             </td>
                                         </tr>
                                 </table>

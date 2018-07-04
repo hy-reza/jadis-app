@@ -38,7 +38,10 @@ class UkrsController extends Controller
     public function store(Request $request)
     {
         $Ukrs = $this -> validate(request(),[
-            'Ukrs' => 'required',
+            'no' => 'required',
+            'semester' => 'required',
+            'mata_kuliah' => 'required',
+            'sks' => 'required',
         ]);
 
         Ukrs::create($Ukrs);

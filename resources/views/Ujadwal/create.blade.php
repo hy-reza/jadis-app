@@ -157,10 +157,264 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4"></div>
-                                <div class="form-group col-md-4">
-                                    <button type="submit" class="btn btn-success" style="margin-left: 38px">Tambah</button>
+                            <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <table style="width: 300px" id="datatable" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>Semester</th>
+                                            <th>Mata Kuliah</th>
+                                            <th>SKS</th>
+                                            <th>Kelas</th>
+                                            <th>Hari</th>
+                                            <th>Jam</th>
+                                            <th width="900px">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>A</td>
+                                            <td>Senin</td>
+                                            <td>1 - 2</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>B</td>
+                                            <td>Selasa</td>
+                                            <td>3 - 4</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>C</td>
+                                            <td>Rabu</td>
+                                            <td>5 - 6</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>D</td>
+                                            <td>Rabu</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>I</td>
+                                            <td>Pengembangan Kepribadian</td>
+                                            <td>2</td>
+                                            <td>E</td>
+                                            <td>Rabu</td>
+                                            <td>9 - 10</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>A</td>
+                                            <td>Senin</td>
+                                            <td>1 - 2</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>B</td>
+                                            <td>Senin</td>
+                                            <td>3 - 4</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>C</td>
+                                            <td>Selasa</td>
+                                            <td>5 - 6</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>D</td>
+                                            <td>Selasa</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>I</td>
+                                            <td>Olahraga</td>
+                                            <td>2</td>
+                                            <td>E</td>
+                                            <td>senin</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>A</td>
+                                            <td>Senin</td>
+                                            <td>1 - 2</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>B</td>
+                                            <td>Selasa</td>
+                                            <td>3 - 4</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>C</td>
+                                            <td>Rabu</td>
+                                            <td>5 - 6</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>D</td>
+                                            <td>Rabu</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>I</td>
+                                            <td>Logika Informatika</td>
+                                            <td>2</td>
+                                            <td>E</td>
+                                            <td>Rabu</td>
+                                            <td>9 - 10</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>A</td>
+                                            <td>Senin</td>
+                                            <td>1 - 2</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>B</td>
+                                            <td>Senin</td>
+                                            <td>3 - 4</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>C</td>
+                                            <td>Selasa</td>
+                                            <td>5 - 6</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>D</td>
+                                            <td>Selasa</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>I</td>
+                                            <td>Pemrograman Terstruktur</td>
+                                            <td>4</td>
+                                            <td>E</td>
+                                            <td>senin</td>
+                                            <td>7 - 8</td>
+                                            <td>
+                                                <a href="{{route ('Ujadwal.index')}}" class="btn btn-primary btn-sm">pilih</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                </table>
                                 </div>
                             </div>
                         </form>

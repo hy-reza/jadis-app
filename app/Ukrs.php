@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ukrs extends Model
 {
-    protected $fillable = ['Ukrs'];
+    protected $fillable = ['no','semester','mata_kuliah','sks'];
 }

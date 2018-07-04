@@ -71,7 +71,7 @@
 						<div class="banner-content text-center">
 							<p class="text-uppercase text-white">We work hard, we result perfect</p>
 							<h1 class="text-uppercase text-white">Kartu Rencana Studi</h1>
-							<h1 class="text-uppercase text-white">Universitas Malang Kuçeçwara</h1>
+							<h1 class="text-uppercase text-white">Universitas Swasta Malang</h1>
 							<!-- <a href="#" class="primary-btn banner-btn">Register</a> -->
 						</div>
 					</div>

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/Adminhome/images/tiitle.png')}}">
-    <title>Admin KRS</title>
+    <title>Desa Junrejo</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('assets/Adminhome/css/lib/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom CSS -->
@@ -44,7 +44,7 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/admin">
                         <!-- Logo icon -->
-                        <b><img src="{{asset('assets/Adminhome/images/KRS.png')}}" alt="homepage" class="dark-logo" /></b>
+                        <b><img src="{{asset('assets/Adminhome/images/jambuwer.jpeg')}}" alt="homepage" class="dark-logo" /></b>
                         <!--End Logo icon -->
                     </a>
                 </div>
@@ -96,23 +96,39 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Menu</span></a>
+
+                        <li><a href="/admin"><i class="fa fa-tachometer"></i>Dashboard </a></li>
+
+                        <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>Register User </a></li>
+
+                        <li><a href="{{route ('datapenduduk.index')}}"><i class="fa fa-group"></i>Data Penduduk</a></li>
+
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user-secret"></i><span class="hide-menu">Master</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="{{ route('register') }}">Register Mahasiswa </a></li>
-                                <li><a href="{{ route('v1.create') }}">Tambah Data Mahasiswa </a></li>
-                                <li><a href="{{ route('matkul.create')}}">Tambah Data Mata Kuliah </a></li>
-                                <li><a href="{{ route('kelas.create')}}">Tambah Data Kelas Mahasiswa </a></li>
-                                <li><a href="{{ route('jurusan.create')}}">Tambah Data Jurusan </a></li>
+                              <li><a href="{{route ('rw.index')}}">Data RW</a></li>
+                              <li><a href="{{route ('rt.index')}}">Data RT</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Data</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="{{route ('v1.index')}}">Data Mahasiswa</a></li>
-                                <li><a href="{{route ('matkul.index')}}">Data Mata Kuliah</a></li>
-                                <li><a href="{{route ('jurusan.index')}}">Data Jadwal Jurusan</a></li>
-                                <li><a href="{{route ('kelas.index')}}">Data Kelas Mahasiswa</a></li>
-                            </ul>
-                        </li>
+                              <li><a href="{{ route('Skjualbelitanah.index') }}"><i class="fa fa-pencil-square-o"></i>Data Keterangan Jual Beli Tanah </a></li>
+                              <li><a href="{{ route('Skpenerimaanpensiun.index') }}"><i class="fa fa-pencil-square-o"></i>Data Keterangan Penerimaan Pensiun </a></li>
+                              <li><a href="{{route ('Spkematian.index')}}"><i class="fa fa-pencil-square-o"></i>Data Pernyataan Kematian</a></li>
+                              <li><a href="{{ route('Skmeninggaldunia.index') }}"><i class="fa fa-pencil-square-o"></i>Data Keterangan Meninggal Dunia </a></li>
+                              <li><a href="{{ route('Skijinsekolah.index') }}"><i class="fa fa-pencil-square-o"></i>Data Keterangan Ijin Sekolah </a></li>
+                              <li><a href="{{ route('Sppindahtempat.index') }}"><i class="fa fa-pencil-square-o"></i>Data Pernyataan Permohonan Pindah Tempat </a></li>
+                              <li><a href="{{ route('Spkelahiran.index') }}"><i class="fa fa-pencil-square-o"></i>Data Pernyataan Kelahiran </a></li>
+                              <li><a href="{{ route('Spkematian.index') }}"><i class="fa fa-pencil-square-o"></i>Data Pernyataan Kematian </a></li>
+                              <li><a href="{{ route('Spahliwaris.index') }}"><i class="fa fa-pencil-square-o"></i>Data Pernyataan Ahli Waris </a></li>
+                              <li><a href="{{route ('Spcerairujuk1.index')}}"><i class="fa fa-pencil-square-o"></i>Data Pengajuan cerai rujuk 1</a></li>
+                              <li><a href="{{route ('Spcerairujuk2.index')}}"><i class="fa fa-pencil-square-o"></i>Data Pengajuan cerai rujuk 2</a></li>
+                              <li><a href="{{route ('Spcerairujuk3.index')}}"><i class="fa fa-pencil-square-o"></i>Data Pengajuan cerai rujuk 3</a></li>
+                              <li><a href="{{route ('Spcerairujuk4.index')}}"><i class="fa fa-pencil-square-o"></i>Data Pengajuan cerai rujuk 4</a></li>
+                              <li><a href="{{ route('Sktidakmampu1.index') }}"><i class="fa fa-pencil-square-o"></i>Data Ket. Tidak Mampu 1 </a></li>
+                              <li><a href="{{ route('Sktidakmampu2.index') }}"><i class="fa fa-pencil-square-o"></i>Data Ket. Tidak Mampu 2 </a></li>
+                              <li><a href="{{ route('Sktidakmampu3.index') }}"><i class="fa fa-pencil-square-o"></i>Data Ket. Tidak Mampu 3 </a></li>
+
+
+
+
                    </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

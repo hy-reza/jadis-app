@@ -149,7 +149,7 @@
 											<th>ID</th>
 											<th>Kode</th>
 											<th>Nama</th>
-                                            <th>Edit</th>
+                      <th>Edit</th>
 											<th colspan="2">Action</th>
 										</tr>
 									</thead>

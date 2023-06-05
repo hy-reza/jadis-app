@@ -4,7 +4,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="{{asset('assets/awal/img/tiitle.png')}}">
+	<link rel="shortcut icon" href="{{asset('assets/awal/img/jambuwer.png')}}">
 	<!-- Author Meta -->
 	<meta name="author" content="CodePixar">
 	<!-- Meta Description -->
@@ -14,7 +14,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Kartu Rencana Studi</title>
+	<title>Desa Junrejo</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 		<!--
@@ -36,7 +36,7 @@
 					<div class="header-content d-flex justify-content-between align-items-center">
 						<div class="logo">
 							<a href="#top" class="smooth">
-								<img src="{{asset('assets/awal/img/KRS.png')}}" alt="">
+								<img src="{{asset('assets/awal/img/jambuwer.jpeg')}}" alt="">
 							</a>
 						</div>
 						<div class="right-bar d-flex align-items-center">
@@ -69,9 +69,9 @@
 				<div class="row fullscreen justify-content-center align-items-center">
 					<div class="col-lg-8">
 						<div class="banner-content text-center">
-							<p class="text-uppercase text-white">We work hard, we result perfect</p>
-							<h1 class="text-uppercase text-white">Kartu Rencana Studi</h1>
-							<h1 class="text-uppercase text-white">Universitas Swasta Malang</h1>
+							<h1 class="text-uppercase text-white">Pemerintahan Kabupaten Malang</h1>
+							<h1 class="text-uppercase text-white">Kecamatan Junrejo</h1>
+							<h1 class="text-uppercase text-white">Desa Junrejo</h1>
 							<!-- <a href="#" class="primary-btn banner-btn">Register</a> -->
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 		</section>
 		<!-- End Banner Area -->
 		<footer>
-					<p class="footer-text m-0">Copyright &copy; 2018  |  All rights reserved to Universitas Malang Kuçeçwara</p>
+					<p class="footer-text m-0">Copyright &copy; 2018  |  All rights reserved to Desa Junrejo Kec.Junrejo Kab.Malang</p>
 		</footer>
 
 		<script src="{{asset('assets/awal/js/vendor/jquery-2.2.4.min.js')}}"></script>

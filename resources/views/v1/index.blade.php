@@ -152,7 +152,7 @@
 											<th>JURUSAN</th>
 											<th>FAKULTAS</th>
 											<th>ALAMAT</th>
-                                            <th>Edit</th>
+                      <th>Edit</th>
 											<th colspan="2">Hapus</th>
 										</tr>
 									</thead>

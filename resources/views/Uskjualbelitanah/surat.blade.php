@@ -8,11 +8,11 @@
     @foreach($Uskjualbelitanah as $Uskjualbelitanah)
     <table align="center">
       <tr>
-      <td><img src="{{asset('assets/Adminhome/images/hitam.png')}}" width="87" height="87"></td>
+      <td><img src="{{asset('assets/Adminhome/images/logo-hitam.png')}}" width="87" height="87"></td>
       <td><center>
-        <font size="4"><b>PEMERINTAH KABUPATEN MALANG<b></font><br>
-        <font size="6"><b>KECAMATAN KROMENGAN</b></font><br>
-        <font size="6"><b>DESA JAMBUWER</b></font><br>
+        <font size="4"><b>PEMERINTAH KOTA BATU<b></font><br>
+        <font size="6"><b>KECAMATAN JUNREJO</b></font><br>
+        <font size="6"><b>DESA JUNREJO</b></font><br>
         <font size="2"><b><u>Jln. Raya Desa Junrejo No. 577 Kode Pos 65191</u></b></font><br>
       </td>
     </tr>
@@ -162,7 +162,7 @@
         </tr>
         <tr>
           <td width="200"><center></center></td>
-          <td width="200"><center>KEPALA DESA JAMBUWER</center></td>
+          <td width="200"><center>KEPALA DESA JUNREJO</center></td>
           <td width="200"><center></center></td>
         </tr>
         <tr>

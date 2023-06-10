@@ -128,7 +128,7 @@
         <td height="20" colspan="2"></td>
       </tr>
       <tr>
-        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dengan ini saya mengajukan permohonan surat pindah tempat kepada Dinas Kependudukan dan Pencatatan Sipil Kabupaten Malang, surat pernyataan/permohonan ini saya buat tanpa ada pemaksaan dari pihak manapun juga dan saya tidak akan melibatkan Dinas Kependudukan dan Pencatatan Sipil Kabupaten Malang bila mana suatu hari ada permasalahan dengan surat pindah saya. Dan saya bersedia dituntut di pengadilan sesuai aturan yang berlaku apabila saya memalsukan data ini.
+        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dengan ini saya mengajukan permohonan surat pindah tempat kepada Dinas Kependudukan dan Pencatatan Sipil Kota Batu, surat pernyataan/permohonan ini saya buat tanpa ada pemaksaan dari pihak manapun juga dan saya tidak akan melibatkan Dinas Kependudukan dan Pencatatan Sipil Kota Batu bila mana suatu hari ada permasalahan dengan surat pindah saya. Dan saya bersedia dituntut di pengadilan sesuai aturan yang berlaku apabila saya memalsukan data ini.
         </td>
       </tr>
     </table>

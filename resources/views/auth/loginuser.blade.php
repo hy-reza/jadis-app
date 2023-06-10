@@ -48,23 +48,16 @@
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" type="submit">
+					<div class="container-login100-form-btn pt-3 pb-5">
+						<button class="btn btn-primary rounded w-100 py-2" type="submit">
 							Login
 						</button>
 					</div>
-					<div class="text-center p-t-90">
-						<a class="btn btn-link" href="{{ route('password.request') }}">
+					{{-- <div class="text-center p-t-90">
+						{{-- <a class="btn btn-link" href="{{ route('password.request') }}">
 							Forgot Password?
-						</a>
-					</div>
+						</a> --}}
+					{{-- </div>  --}}
 				</form>
 			</div>
 		</div>

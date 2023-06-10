@@ -74,9 +74,9 @@
             <span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
-          <div class="container-login100-form-btn">
-						<button class="login100-form-btn" type="submit" class="btn btn-primary">
-							Daftar
+          <div class="container-login100-form-btn pt-3 pb-5">
+						<button class="btn btn-primary rounded w-100 py-2" type="submit">
+							Login
 						</button>
 					</div>
 				</form>

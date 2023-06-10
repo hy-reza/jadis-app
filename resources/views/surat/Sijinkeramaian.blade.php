@@ -7,11 +7,11 @@
   <body>
     <table align="center">
       <tr>
-      <td><img src="{{asset('assets/Adminhome/images/hitam.png')}}" width="87" height="87"></td>
+      <td><img src="{{asset('assets/Adminhome/images/logo-hitam.png')}}" width="87" height="87"></td>
       <td><center>
-        <font size="4"><b>PEMERINTAH KABUPATEN MALANG<b></font><br>
-        <font size="6"><b>KECAMATAN KROMENGAN</b></font><br>
-        <font size="6"><b>DESA JAMBUWER</b></font><br>
+        <font size="4"><b>PEMERINTAH KOTA BATU<b></font><br>
+        <font size="6"><b>KECAMATAN JUNREJO</b></font><br>
+        <font size="6"><b>DESA JUNREJO</b></font><br>
         <font size="2"><b><u>Jln. Raya Desa Junrejo No. 577 Kode Pos 65191</u></b></font><br>
       </td>
     </tr>
@@ -32,7 +32,7 @@
       <tr>
         <td>Sifat</td>
         <td>:</td>
-        <td>Yth. <b>KAPOLSEK KROMENGAN<b></td>
+        <td>Yth. <b>KAPOLSEK JUNREJO<b></td>
       </tr>
       <tr>
         <td>Lampiran</td>
@@ -42,7 +42,7 @@
       <tr>
         <td>Perihal</td>
         <td>:</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KROMENGAN </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JUNREJO </td>
       </tr>
       <tr>
         <td height="35" colspan="2"></td>

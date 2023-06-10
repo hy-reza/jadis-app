@@ -42,10 +42,11 @@
         <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <!-- Logo -->
-                <div class="navbar-header">
+                <div class="navbar-header my-1">
                     <a class="navbar-brand" href="/home">
                         <!-- Logo icon -->
-                        <b><img src="{{asset('assets/Adminhome/images/jambuwer.jpeg')}}" alt="homepage" class="dark-logo" /></b>
+                        <b><img src="{{ asset('assets/home/img/logo_batu.png') }}" " width="40"
+                                        alt="" class="mr-2">Dashboard</b>
                         <!--End Logo icon -->
                     </a>
                 </div>

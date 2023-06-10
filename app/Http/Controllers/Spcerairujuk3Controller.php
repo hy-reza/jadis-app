@@ -45,7 +45,7 @@ class Spcerairujuk3Controller extends Controller
     public function store(Request $request)
     {
       $Spcerairujuk3 = $this -> validate(request(),[
-      z'nama' => 'required',
+      'nama' => 'required',
       'alamat' => 'required',
       'nama_angkat' => 'required',
       'alamat_angkat' => 'required',

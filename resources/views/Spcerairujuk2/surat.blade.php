@@ -8,11 +8,11 @@
     @foreach($Spcerairujuk2 as $Spcerairujuk2)
     <table align="center">
       <tr>
-      <td><img src="{{asset('assets/Adminhome/images/hitam.png')}}" width="87" height="87"></td>
+      <td><img src="{{asset('assets/Adminhome/images/logo-hitam.png')}}" width="87" height="87"></td>
       <td><center>
-        <font size="4"><b>PEMERINTAH KABUPATEN MALANG<b></font><br>
-        <font size="6"><b>KECAMATAN KROMENGAN</b></font><br>
-        <font size="6"><b>DESA JAMBUWER</b></font><br>
+        <font size="4"><b>PEMERINTAH KOTA BATU<b></font><br>
+        <font size="6"><b>KECAMATAN JUNREJO</b></font><br>
+        <font size="6"><b>DESA JUNREJO</b></font><br>
         <font size="2"><b><u>Jln. Raya Desa Junrejo No. 577 Kode Pos 65191</u></b></font><br>
       </td>
     </tr>
@@ -35,7 +35,7 @@
     <table align="center" width="600" >
 
       <tr>
-        <td colspan="2">Kami yang bertanda tangan dibawah ini, Kepala Desa Junrejo Kecamatan Junrejo Kabupaten Malang Propinsi Jawa Timur.
+        <td colspan="2">Kami yang bertanda tangan dibawah ini, Kepala Desa Junrejo Kecamatan Junrejo Kota Batu Propinsi Jawa Timur.
         </td>
       </tr>
       <tr>
@@ -115,7 +115,7 @@
         </tr>
       <table  align="center"  width="600" >
         <tr>
-          <td colspan="2">Bahwa orang tersebut diatas adalah benar – benar Penduduk Desa Junrejo Kecamatan Junrejo Kabupaten Malang Jawa Timur. bahwa orang tersebut diatas adalah pasangan Suami & Istri. Menerangkan suami orang tersebut diatas <b>({{$Spcerairujuk2['suami']}})</b> saat ini pergi bekerja di {{$Spcerairujuk2['negara']}}.</td>
+          <td colspan="2">Bahwa orang tersebut diatas adalah benar – benar Penduduk Desa Junrejo Kecamatan Junrejo Kota Batu Jawa Timur. bahwa orang tersebut diatas adalah pasangan Suami & Istri. Menerangkan suami orang tersebut diatas <b>({{$Spcerairujuk2['suami']}})</b> saat ini pergi bekerja di {{$Spcerairujuk2['negara']}}.</td>
         </tr>
         <tr>
         <td height="10"></td>

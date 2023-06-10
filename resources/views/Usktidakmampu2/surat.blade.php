@@ -8,11 +8,11 @@
     @foreach($Usktidakmampu2 as $Usktidakmampu2)
     <table align="center">
       <tr>
-      <td><img src="{{asset('assets/Adminhome/images/hitam.png')}}" width="87" height="87"></td>
+      <td><img src="{{asset('assets/Adminhome/images/logo-hitam.png')}}" width="87" height="87"></td>
       <td><center>
-        <font size="4"><b>PEMERINTAH KABUPATEN MALANG<b></font><br>
-        <font size="6"><b>KECAMATAN KROMENGAN</b></font><br>
-        <font size="6"><b>DESA JAMBUWER</b></font><br>
+        <font size="4"><b>PEMERINTAH KOTA BATU<b></font><br>
+        <font size="6"><b>KECAMATAN JUNREJO</b></font><br>
+        <font size="6"><b>DESA JUNREJO</b></font><br>
         <font size="2"><b><u>Jln. Raya Desa Junrejo No. 577 Kode Pos 65191</u></b></font><br>
       </td>
     </tr>
@@ -34,7 +34,7 @@
 
     <table align="center" width="600" >
       <tr>
-        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini Kepala Desa Junrejo Kecamatan Junrejo Kabupaten Malang menerangkan dengan sebenarnya bahwa :
+        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini Kepala Desa Junrejo Kecamatan Junrejo Kota Batu menerangkan dengan sebenarnya bahwa :
         </td>
       </tr>
       <tr>
@@ -79,7 +79,7 @@
         <td height="15" colspan="2"></td>
       </tr>
       <tr>
-        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adalah benar – benar penduduk Desa Junrejo Kecamatan Junrejo Kabupaten Malang yang kurang mampu ekonominya. Dan memerlukan Pelayanan Pengobatan di
+        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adalah benar – benar penduduk Desa Junrejo Kecamatan Junrejo Kota Batu yang kurang mampu ekonominya. Dan memerlukan Pelayanan Pengobatan di
 {{$Usktidakmampu2->tempat_pengobatan}}.
   </tr>
       <tr>
@@ -118,7 +118,7 @@
           <td><center>Mengetahui</center></td>
         </tr>
         <tr>
-          <td><center>CAMAT KROMENGAN.</center></td>
+          <td><center>CAMAT JUNREJO.</center></td>
         </tr>
         <tr>
           <td height="60"></td>

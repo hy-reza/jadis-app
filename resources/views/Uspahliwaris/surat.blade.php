@@ -8,11 +8,11 @@
     @foreach($Uspahliwaris as $Uspahliwaris)
     <table align="center">
       <tr>
-      <td><img src="{{asset('assets/Adminhome/images/hitam.png')}}" width="87" height="87"></td>
+      <td><img src="{{asset('assets/Adminhome/images/logo-hitam.png')}}" width="87" height="87"></td>
       <td><center>
-        <font size="4"><b>PEMERINTAH KABUPATEN MALANG<b></font><br>
-        <font size="6"><b>KECAMATAN KROMENGAN</b></font><br>
-        <font size="6"><b>DESA JAMBUWER</b></font><br>
+        <font size="4"><b>PEMERINTAH KOTA BATU<b></font><br>
+        <font size="6"><b>KECAMATAN JUNREJO</b></font><br>
+        <font size="6"><b>DESA JUNREJO</b></font><br>
         <font size="2"><b><u>Jln. Raya Desa Junrejo No. 577 Kode Pos 65191</u></b></font><br>
       </td>
     </tr>
@@ -32,7 +32,7 @@
 
     <table align="center" width="600" >
       <tr>
-        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan Surat Peryataan Waris tanggal {{$Uspahliwaris->tgl_hari_ini}}  Sebagaimana terlampir yang merupakan bagian yang tidak terpisahkan dari Surat Keterangan Waris ini,dengan ini Kepala Desa Junrejo Kecamatan Junrejo Kabupaten Malang,menerangkan bahwa Almarhum {{$Uspahliwaris->nama_alm}} sesuai dengan akte Kematian No.{{$Uspahliwaris->nomer_akte_kematian}} pada hari {{$Uspahliwaris->hari}}  Tanggal  {{$Uspahliwaris->tanggal}} Bulan {{$Uspahliwaris->bulan}} Tahun {{$Uspahliwaris->tahun}}  Telah meninggal dunia dan semasa hidupnya kawin dengan {{$Uspahliwaris->status_suami_istri}}  {{$Uspahliwaris->nama_suami_istri}} yang masih hidup dan dari perkawinan tersebut telah dilahirkan 1 ( satu ) orang anak yaitu :
+        <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan Surat Peryataan Waris tanggal {{$Uspahliwaris->tgl_hari_ini}}  Sebagaimana terlampir yang merupakan bagian yang tidak terpisahkan dari Surat Keterangan Waris ini,dengan ini Kepala Desa Junrejo Kecamatan Junrejo Kota Batu,menerangkan bahwa Almarhum {{$Uspahliwaris->nama_alm}} sesuai dengan akte Kematian No.{{$Uspahliwaris->nomer_akte_kematian}} pada hari {{$Uspahliwaris->hari}}  Tanggal  {{$Uspahliwaris->tanggal}} Bulan {{$Uspahliwaris->bulan}} Tahun {{$Uspahliwaris->tahun}}  Telah meninggal dunia dan semasa hidupnya kawin dengan {{$Uspahliwaris->status_suami_istri}}  {{$Uspahliwaris->nama_suami_istri}} yang masih hidup dan dari perkawinan tersebut telah dilahirkan 1 ( satu ) orang anak yaitu :
         </td>
       </tr>
       <tr>
@@ -86,7 +86,7 @@
           <td width="270"><center>Junrejo, {{$Uspahliwaris->tgl_hari_ini}}</center></td>
         </tr>
         <tr>
-          <td><center><b>CAMAT – KROMENGAN</b></center></td>
+          <td><center><b>CAMAT – JUNREJO</b></center></td>
           <td></td>
           <td><center>Kepala Desa Junrejo</center></td>
         </tr>

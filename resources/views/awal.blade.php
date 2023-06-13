@@ -54,7 +54,7 @@
                     <div class="main-menu-wrap align-items-center">
                         <!-- logo -->
                         <div class="site-logo">
-                            <a href="index.html">
+                            <a href="#">
                                 <div class="d-flex align-items-center">
                                     <img src="{{ asset('assets/home/img/logo_batu.png') }}" width="40"
                                         alt="" class="mr-2">
@@ -134,7 +134,7 @@
                             <h1>Desa Junrejo</h1>
                             <div class="hero-btns">
                                 <a href="#learn-section" class="boxed-btn">Learn More</a>
-                                <a href="https://wa.me/6281387223051?text=Hi" class="bordered-btn">Contact Us</a>
+                                <a href="{{ url('/home') }}" class="bordered-btn">Access Now</a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="content">
-                            <h3>Keamanan data</h3>
+                            <h3>Keamanan Data</h3>
                             <p>Data dilindungi dengan enkripsi dan protokol keamanan</p>
                         </div>
                     </div>
@@ -223,16 +223,14 @@
                                                 <button class="btn btn-link collapsed" type="button"
                                                     data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    Q: Question ?
+                                                    Q: Bagaimana saya bisa mendapatkan bantuan ?
                                                 </button>
                                             </h5>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                             data-parent="#faqExample">
                                             <div class="card-body">
-                                                Bootstrap is the most popular CSS framework in the world. The latest
-                                                version released in 2018 is Bootstrap 4. Bootstrap can be used to
-                                                quickly build responsive websites.
+                                                Anda bisa menghubungi teknisi web di nomor ini
                                             </div>
                                         </div>
                                     </div>
@@ -352,7 +350,7 @@
     <!-- end product section -->
 
     <!-- cart banner section -->
-    {{-- <section class="cart-banner pt-100 pb-100">
+    <section class="cart-banner pt-100 pb-100">
         <div class="container">
             <div class="row clearfix">
                 <!--Image Column-->
@@ -361,22 +359,25 @@
                         <div class="price-box">
                             <div class="inner-price">
                                 <span class="price">
-                                    <strong>30%</strong> <br> off per kg
+                                    <span class="h2 text-white">
+                                        <i class="fas fa-download"></i>
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <img src="{{ asset('assets/home/img/a.jpg') }}" alt="">
+                        <img src="{{ asset('assets/home/img/a.png') }}" alt="">
                     </div>
                 </div>
                 <!--Content Column-->
                 <div class="content-column col-lg-6">
-                    <h3><span class="orange-text">Deal</span> of the month</h3>
-                    <h4>Hikan Strwaberry</h4>
-                    <div class="text">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam
-                        similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error
-                        sit voluptatem accusant</div>
+                    <h3><span class="orange-text">Panduan Pengguna : </span>User Manual</h3>
+                    <div class="text">Manual Book ini dirancang khusus untuk memberikan pemahaman mendalam
+                        tentang penggunaan Sistem Informasi Manajemen & Administrasi Desa Junrejo (SIMAJU). Dalam
+                        panduan ini, Anda akan mempelajari langkah-langkah lengkap dalam menggunakan SIMAJU, termasuk
+                        akses dan login, navigasi menu, manajemen data kependudukan, pembuatan dokumen administrasi,
+                        serta laporan dan analisis data.</div>
                     <!--Countdown Timer-->
-                    <div class="time-counter">
+                    {{-- <div class="time-counter">
                         <div class="time-countdown clearfix" data-countdown="2020/2/01">
                             <div class="counter-column">
                                 <div class="inner"><span class="count">00</span>Days</div>
@@ -391,12 +392,13 @@
                                 <div class="inner"><span class="count">00</span>Secs</div>
                             </div>
                         </div>
-                    </div>
-                    <a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div> --}}
+                    <a href="cart.html" class="cart-btn mt-3"><i class="fas fa-download"></i> Download Manual
+                        Book</a>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!-- end cart banner section -->
 
     <!-- logo carousel -->
@@ -586,7 +588,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <p>Copyrights &copy; 2022 - <a href="https://imransdesign.com/">PMM UMM</a> all Rights
+                    <p>Copyrights &copy; 2023 - <a href="https://imransdesign.com/">PMM UMM</a> all Rights
                         Reserved.<br>
                     </p>
                 </div>

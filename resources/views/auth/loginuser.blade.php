@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="{{ asset('assets/loguser/images/tiitle.png') }}">
+    {{-- <link rel="shortcut icon" href="{{ asset('assets/loguser/images/tiitle.png') }}"> --}}
     <title>Sign In</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    {{-- <link rel="icon" type="image/png" href="images/icons/favicon.ico" /> --}}
+    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/home/img/logo_batu.png') }}">
+
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/loguser/vendor/bootstrap/css/bootstrap.min.css') }}">
     <!--===============================================================================================-->

@@ -9,7 +9,7 @@
         content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
     <!-- title -->
-    <title>SIADJUN</title>
+    <title>SIMAJU</title>
     <link rel="stylesheet" href="{{ asset('assets/awal/css/bootstrap.css') }}">
 
     <!-- favicon -->
@@ -71,14 +71,14 @@
                         <!-- menu start -->
                         <nav class="main-menu">
                             <ul>
-                                <li class=""><a href="#">Home</a>
+                                {{-- <li class=""><a href="#">Home</a>
                                     <ul class="sub-menu">
                                         <li><a href="index.html">Static Home</a></li>
                                         <li><a href="index_2.html">Slider Home</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li> --}}
                                 <li>
                                     @if (Route::has('login'))
                                         <div class="top-right links header-icons">
@@ -130,11 +130,11 @@
                 <div class="col-lg-9 offset-lg-2 text-center">
                     <div class="hero-text">
                         <div class="hero-text-tablecell">
-                            <p class="subtitle">SISTEM INFORMASI & ADMINISTRASI</p>
+                            <p class="subtitle">SISTEM INFORMASI MANAJEMEN & ADMINISTRASI</p>
                             <h1>Desa Junrejo</h1>
                             <div class="hero-btns">
                                 <a href="shop.html" class="boxed-btn">Learn More</a>
-                                <a href="contact.html" class="bordered-btn">Contact Us</a>
+                                <a href="https://api.whatsapp.com/send?phone=081807300869" class="bordered-btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -188,53 +188,66 @@
     </div>
     <!-- end features list section -->
 
-     <!-- advertisement section -->
-     <div class="abt-section mb-150 mt-5 pt-5">
+    <!-- advertisement section -->
+    <div class="abt-section mb-150 mt-5 pt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 justify-content-start align-items-center">
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 col-md-12 justify-content-start align-items-center mt-md-3 w-md-100">
                     <div class="w-100 py-3">
                         <div class="row">
                             <div class="col-10  w-100 mx-auto">
-                                <div class="accordion mx-3" id="faqExample">
+                                <div class="accordion mx-0" id="faqExample">
                                     <div class="card">
                                         <div class="card-header p-2" id="headingOne">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                  Q: Bagaimana cara kerja SIADJUN ?
+                                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Q: Bagaimana cara kerja SIMAJU ?
                                                 </button>
-                                              </h5>
+                                            </h5>
                                         </div>
-                    
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#faqExample">
                                             <div class="card-body">
-                                                <b>Answer:</b> : Sistem informasi administrasi bekerja dengan mengintegrasikan berbagai fitur dan modul yang memungkinkan pengelolaan dan pemrosesan data administratif desa secara efisien. 
+                                                <b>Answer:</b> : Sistem informasi administrasi bekerja dengan
+                                                mengintegrasikan berbagai fitur dan modul yang memungkinkan pengelolaan
+                                                dan pemrosesan data administratif desa secara efisien.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header p-2" id="headingTwo">
                                             <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Q: Question ?
-                                            </button>
-                                          </h5>
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Q: Question ?
+                                                </button>
+                                            </h5>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#faqExample">
                                             <div class="card-body">
-                                                Bootstrap is the most popular CSS framework in the world. The latest version released in 2018 is Bootstrap 4. Bootstrap can be used to quickly build responsive websites.
+                                                Bootstrap is the most popular CSS framework in the world. The latest
+                                                version released in 2018 is Bootstrap 4. Bootstrap can be used to
+                                                quickly build responsive websites.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header p-2" id="headingThree">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                  Q. What is another question?
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Q. What is another question?
                                                 </button>
-                                              </h5>
+                                            </h5>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#faqExample">
                                             <div class="card-body">
                                                 The answer to the question can go here.
                                             </div>
@@ -243,35 +256,41 @@
                                     <div class="card">
                                         <div class="card-header p-2" id="headingThree">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                  Q. What is the next question?
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Q. What is the next question?
                                                 </button>
-                                              </h5>
+                                            </h5>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#faqExample">
                                             <div class="card-body">
-                                                The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                                                The answer to this question can go here. This FAQ example can contain
+                                                all the Q/A that is needed.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
                         <!--/row-->
                     </div>
                     <!--container-->
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 mt-3">
                     <div class="abt-text p-0 m-0">
                         <p class="top-sub">Sistem Informasi</p>
-                        <h2>SIAD<span class="orange-text">JUN</span></h2>
-                        <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac
-                            vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet
-                            sapien sed, interdum velit. Nam eu molestie lorem.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat
-                            veritatis minus, et labore minima mollitia qui ducimus.</p>
-                        <a href="about.html" class="boxed-btn mt-4">Akses Sekarang</a>
+                        <h2>SIMA<span class="orange-text">JU</span></h2>
+                        <p>Sistem Informasi Manajemen & Administrasi Desa Junrejo (SIMAJU) adalah solusi untuk
+                            meningkatkan proses pelayanan dan informasi publik. Sistem ini mengelola data kependudukan
+                            serta mencetak surat keterangan, pernyataan, dan pengajuan dengan efisien. SIMAJU membantu
+                            Desa Junrejo dalam menyediakan layanan yang lebih cepat dan akurat kepada masyarakat,
+                            mengurangi risiko kesalahan pencatatan, dan meningkatkan efisiensi administrasi. Dengan
+                            SIMAJU, masyarakat Desa Junrejo dapat dengan mudah mengakses informasi dan memperoleh
+                            dokumen yang dibutuhkan dengan lebih cepat dan praktis.</p>
+                        <a href="{{ url('/home') }}" class="boxed-btn mt-4">Akses Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -383,7 +402,7 @@
     <!-- end cart banner section -->
 
     <!-- logo carousel -->
-    <div class="logo-carousel-section">
+    {{-- <div class="logo-carousel-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -407,7 +426,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- end logo carousel -->
 
     <!-- testimonail-section -->
@@ -471,7 +490,7 @@
     </div>
     <!-- end testimonail-section --> --}}
 
-   
+
 
     {{-- <!-- shop banner -->
     <section class="shop-banner">

@@ -133,7 +133,7 @@
                             <p class="subtitle">SISTEM INFORMASI MANAJEMEN & ADMINISTRASI</p>
                             <h1>Desa Junrejo</h1>
                             <div class="hero-btns">
-                                <a href="#learn-section" class="boxed-btn">Learn More</a>
+                                <a href="#feature" class="boxed-btn">Learn More</a>
                                 <a href="{{ url('/home') }}" class="bordered-btn">Access Now</a>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
     <!-- end hero area -->
 
     <!-- features list section -->
-    <div class="list-section pt-80 pb-80 d-flex align-items-center">
+    <div class="list-section pt-80 pb-80 d-flex align-items-center" id="feature">
         <div class="container">
 
             <div class="row mx-auto w-100">
@@ -230,7 +230,10 @@
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                             data-parent="#faqExample">
                                             <div class="card-body">
-                                                Anda bisa menghubungi teknisi web di nomor ini
+                                                Jika Anda mengalami kebingungan atau menghadapi masalah dalam
+                                                menggunakan SIMAJU, silakan hubungi tim dukungan kami melalui nomor
+                                                teknisi berikut: +XX-XXXX-XXXX. Tim dukungan kami siap membantu Anda
+                                                menyelesaikan masalah dan memberikan bantuan teknis yang diperlukan.
                                             </div>
                                         </div>
                                     </div>
@@ -240,14 +243,15 @@
                                                 <button class="btn btn-link collapsed" type="button"
                                                     data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    Q. What is another question?
+                                                    Q. Bagaimana cara menggunakan SIMAJU ?
                                                 </button>
                                             </h5>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                             data-parent="#faqExample">
                                             <div class="card-body">
-                                                The answer to the question can go here.
+                                                Anda dapat melihat tata cara menggunakan aplikasi ini melalui <a
+                                                    href="#manual">buka manual</a> yang telah kami sediakan.
                                             </div>
                                         </div>
                                     </div>
@@ -257,15 +261,17 @@
                                                 <button class="btn btn-link collapsed" type="button"
                                                     data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    Q. What is the next question?
+                                                    Q. Apakah SIMAJU aman digunakan?
                                                 </button>
                                             </h5>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                             data-parent="#faqExample">
                                             <div class="card-body">
-                                                The answer to this question can go here. This FAQ example can contain
-                                                all the Q/A that is needed.
+                                                Ya, SIMAJU memiliki sistem keamanan yang kuat untuk melindungi data dan
+                                                informasi yang disimpan di dalamnya. Kami menggunakan langkah-langkah
+                                                keamanan yang ketat untuk mencegah akses tidak sah dan melindungi
+                                                kerahasiaan data.
                                             </div>
                                         </div>
                                     </div>
@@ -350,7 +356,7 @@
     <!-- end product section -->
 
     <!-- cart banner section -->
-    <section class="cart-banner pt-100 pb-100">
+    <section class="cart-banner pt-100 pb-100" id="manual">
         <div class="container">
             <div class="row clearfix">
                 <!--Image Column-->
@@ -393,7 +399,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    <a href="cart.html" class="cart-btn mt-3"><i class="fas fa-download"></i> Download Manual
+                    <a href="https://docs.google.com/document/d/1cVfinUZojGdedkgtOi4zOwy8R_f5VG4w/edit?usp=drive_link"
+                        class="cart-btn mt-3"><i class="fas fa-download"></i> Unduh Manual
                         Book</a>
                 </div>
             </div>

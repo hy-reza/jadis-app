@@ -133,8 +133,8 @@
                             <p class="subtitle">SISTEM INFORMASI MANAJEMEN & ADMINISTRASI</p>
                             <h1>Desa Junrejo</h1>
                             <div class="hero-btns">
-                                <a href="shop.html" class="boxed-btn">Learn More</a>
-                                <a href="https://api.whatsapp.com/send?phone=081807300869" class="bordered-btn">Contact Us</a>
+                                <a href="#learn-section" class="boxed-btn">Learn More</a>
+                                <a href="https://wa.me/6281387223051?text=Hi" class="bordered-btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -152,29 +152,29 @@
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <div class="list-box d-flex align-items-center">
                         <div class="list-icon">
-                            <i class="fas fa-shipping-fast"></i>
+                            <i class="fas fa-rocket"></i>
                         </div>
                         <div class="content">
                             <h3>Pelayanan instan</h3>
-                            <p>Akses informasi dan melakukan kegiatan administratif secara instan dan cepat.</p>
+                            <p>Akses informasi dan kegiatan administratif secara instan dan cepat.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <div class="list-box d-flex align-items-center">
                         <div class="list-icon">
-                            <i class="fas fa-phone-volume"></i>
+                            <i class="fas fa-universal-access"></i>
                         </div>
                         <div class="content">
                             <h3>Aksesibilitas 24/7</h3>
-                            <p>Akses informasi dan layanan kapan pun</p>
+                            <p>Akses informasi dan layanan kapanpun</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="list-box d-flex justify-content-start align-items-center">
                         <div class="list-icon">
-                            <i class="fas fa-sync"></i>
+                            <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="content">
                             <h3>Keamanan data</h3>
@@ -189,7 +189,7 @@
     <!-- end features list section -->
 
     <!-- advertisement section -->
-    <div class="abt-section mb-150 mt-5 pt-5">
+    <div class="abt-section mb-150 mt-5 pt-5" id="learn-section">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6 col-md-12 justify-content-start align-items-center mt-md-3 w-md-100">
@@ -287,9 +287,7 @@
                             meningkatkan proses pelayanan dan informasi publik. Sistem ini mengelola data kependudukan
                             serta mencetak surat keterangan, pernyataan, dan pengajuan dengan efisien. SIMAJU membantu
                             Desa Junrejo dalam menyediakan layanan yang lebih cepat dan akurat kepada masyarakat,
-                            mengurangi risiko kesalahan pencatatan, dan meningkatkan efisiensi administrasi. Dengan
-                            SIMAJU, masyarakat Desa Junrejo dapat dengan mudah mengakses informasi dan memperoleh
-                            dokumen yang dibutuhkan dengan lebih cepat dan praktis.</p>
+                            mengurangi risiko kesalahan pencatatan, dan meningkatkan efisiensi administrasi.</p>
                         <a href="{{ url('/home') }}" class="boxed-btn mt-4">Akses Sekarang</a>
                     </div>
                 </div>
